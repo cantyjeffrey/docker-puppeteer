@@ -3,7 +3,9 @@ Base environment image for Puppeteer (Headless Chrome Node API)
 ## Getting started
 
 ### Start node application
-Run the container by passing node -e "<yourscript.js content as a string> as the command:
+
+Run the container by passing node -e "<yourscript.js content as a string> as the
+command:
 
 ```bash
 docker run -i --rm --cap-add=SYS_ADMIN \
@@ -12,10 +14,11 @@ docker run -i --rm --cap-add=SYS_ADMIN \
 ```
 
 ### Start with your docker application
+
 Write your Dockerfile and run:
 
 ```
-FROM zenato/puppeteer
+FROM cantyjeffrey/puppeteer
 
 USER root
 
@@ -23,5 +26,3 @@ USER root
 
 CMD node your-application
 ```
-
-- See more example - https://github.com/zenato/puppeteer-renderer
